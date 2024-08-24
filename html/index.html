@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Desafío Encriptador de Alura ONE-Oracle: Aplicación para encriptar y desencriptar mensajes de manera segura.">
+    <meta name="keywords" content="encriptador, desencriptador, Alura ONE, Oracle, desafío, aplicación de encriptación">
+    <title>Desafío Encriptador - Alura ONE-Oracle</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="index-responsive">
+    <header>
+        <a href="https://www.aluracursos.com/"
+            onclick="window.open(this.href, '_blank', 'width=800,height=600'); return false;">
+            <img src="../assets/img/Logo.png" alt="Logo de Alura" class="logo">
+        </a>
+    </header>
+
+    <main>
+        <section class="encriptador">
+            <textarea id="texto-encriptar" class="encriptar" placeholder="Ingrese el texto aquí"
+                aria-label="Texto para encriptar"></textarea>
+            <div class="encriptador-aviso">
+                <img src="../assets/img/Aviso.png" alt="Aviso" class="img-aviso">
+                <p class="texto-aviso">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="encriptador-contenedor">
+                <button type="button" class="btn-encriptar" aria-label="Encriptar texto">Encriptar</button>
+                <button type="button" class="btn-desencriptar" aria-label="Desencriptar texto">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="tarjeta">
+            <div class="tarjeta-contenedor">
+                <img src="../assets/img/Muneco.png" alt="Muñeco" class="img-muneco">
+                <p class="texto-uno">Ningún mensaje fue encontrado</p>
+                <p class="texto-dos">Ingrese el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <textarea id="texto-evaluar" class="evaluar" readonly aria-label="Resultado del mensaje"></textarea>
+            <button type="button" class="btn-copiar" aria-label="Copiar texto">Copiar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; 2024 - Encriptador de Texto - Desarrollado por César Humberto Alba Sosa</p>
+        <a href="https://www.linkedin.com/in/chalbaso/"
+            onclick="window.open(this.href, '_blank', 'width=800,height=600'); return false;"
+            aria-label="Perfil de LinkedIn">
+            <img src="../assets/img/Linkedin.png" alt="Logo de LinkedIn" class="linkedin">
+        </a>
+        <a href="https://github.com/chalbaso-git"
+            onclick="window.open(this.href, '_blank', 'width=800,height=600'); return false;"
+            aria-label="Perfil de GitHub">
+            <img src="../assets/img/Github.png" alt="Logo de GitHub" class="github">
+        </a>
+    </footer>
+
+    <script src="../js/encriptador.js"></script>
+</body>
+
+</html>
